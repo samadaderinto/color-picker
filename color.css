@@ -1,0 +1,101 @@
+*::after,*::before {
+    padding: 0;
+    margin: 0;
+}
+
+.canvas {
+    border: 2px solid grey;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.all {
+    display: flex;
+    width: 300px;
+    height: 445px;
+    flex-direction: column;
+
+    background-image: linear-gradient(to left, #eee,rgb(240, 228, 228));
+}
+
+.color-room {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+
+.color-room .color-editor {
+   width: 220px;
+}
+
+.color-room .color-editor .changer,
+.color-room .color-editor .trans {
+    width: 220px;
+    height: 23px;
+    border: 2px solid grey;
+}
+
+.color-room .view-picked-color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: lawngreen;
+    align-self: center;
+    margin-right: 4px;
+}
+
+.format {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin-left: -5px;
+    align-self: center;
+}
+
+.format > button {
+    width: 70px;
+    height: 30px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: turquoise;
+ }
+
+
+.format > button:hover {
+    background: white;
+ }
+
+
+input[type = "text"] {
+    width: 299px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 120px;
+    margin-top: 10px;
+    font-size: 17px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+
+input[type = "text"]:focus,
+input[type = "text"]:active {
+   outline: none;
+   border: 1px solid grey;
+   border-radius: 3px;
+}
