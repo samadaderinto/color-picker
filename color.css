@@ -1,10 +1,11 @@
-*::after,*::before {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .canvas {
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
 
 
@@ -14,57 +15,59 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-image: linear-gradient(to left, #eee,rgb(240, 228, 228));
 }
 
 .all {
     display: flex;
-    width: 300px;
-    height: 445px;
+    width: 350px;
+    height: 440px;
+    justify-content: space-between;
     flex-direction: column;
-
-    background-image: linear-gradient(to left, #eee,rgb(240, 228, 228));
+    padding: 10px;
+    border: 1px solid blue;
+    background: #ffffff;
+    border-radius: 5px;
 }
 
 .color-room {
     display: flex;
-    justify-content: space-between;
-    padding: 3px;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 100%;
+    align-items: center;
 }
 
 
 .color-room .color-editor {
-   width: 220px;
+   width: 70%;
+   
 }
 
 .color-room .color-editor .changer,
-.color-room .color-editor .trans {
-    width: 220px;
+.color-room .color-editor .transparency {
+    width: 100%;
     height: 23px;
     border: 2px solid grey;
 }
 
 .color-room .view-picked-color {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid gray;
-    box-sizing: border-box;
     background-color: lawngreen;
-    align-self: center;
-    margin-right: 4px;
 }
 
 .format {
     display: flex;
-    justify-content: space-evenly;
-    width: 250px;
-    margin-left: -5px;
-    align-self: center;
+
 }
 
 .format > button {
     width: 70px;
     height: 30px;
+    margin-right: 5px;
     border: 1px solid grey;
     display: flex;
     justify-content: center;
@@ -80,16 +83,14 @@ body {
 
 
 input[type = "text"] {
-    width: 299px;
+    width: 100%;
     border: 1px solid grey;
     box-sizing: border-box;
+    padding-left: 35%;padding-bottom: 5px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 120px;
-    margin-top: 10px;
-    font-size: 17px;
-    align-self: center;
-    justify-self: flex-end;
+    font-weight: 510;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
 
 
